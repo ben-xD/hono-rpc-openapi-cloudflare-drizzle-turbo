@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "module": "nodenext",
+      "moduleResolution": "nodenext",
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "isolatedModules": true,
+      "preserveWatchOutput": true,
+      "skipLibCheck": true,
+      "strict": true,
+      "outDir": "dist",
+      "declaration": true
+    },
+    "include": ["src/**/*", "eslint.config.js"],
+    "exclude": ["node_modules"]
+  }

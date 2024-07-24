@@ -1,0 +1,21 @@
+{
+  "name": "@application-name/backend",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev src/index.ts",
+    "deploy": "wrangler deploy --minify src/index.ts",
+    "lint": "prettier --check src && eslint .",
+    "lint:fix": "prettier src --write && eslint --fix ."
+  },
+  "dependencies": {
+    "@hono/swagger-ui": "^0.4.0",
+    "@hono/zod-openapi": "^0.15.1",
+    "@scalar/hono-api-reference": "^0.5.115",
+    "hono": "^4.5.1"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240529.0",
+    "prettier": "^3.3.3",
+    "eslint-config-repo": "workspace:*"
+  }
+}

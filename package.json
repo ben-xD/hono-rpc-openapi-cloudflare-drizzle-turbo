@@ -1,0 +1,21 @@
+{
+  "name": "@application-name/root",
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "lint:fix": "turbo lint:fix",
+    "clean": "turbo clean",
+    "deploy": "turbo deploy",
+    "deploy:staging": "turbo deploy:staging",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "husky": "^9.1.1",
+    "rimraf": "^6.0.1",
+    "turbo": "^2.0.9",
+    "vitest": "^2.0.4",
+    "wrangler": "^3.66.0"
+  },
+  "packageManager": "pnpm@9.6.0"
+}
